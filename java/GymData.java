@@ -19,9 +19,9 @@ public class GymData
 
             while (rs.next())
             {
-                System.out.println(rs.getString("name"));
+                System.out.println("Name:" + rs.getString("name"));
             }
-
+            stmt.executeUpdate("UPDATE Member SET age = 22 WHERE member_id = 101")
         } catch (Exception e)
         {
             System.out.println(e);
